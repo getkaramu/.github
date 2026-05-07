@@ -20,7 +20,7 @@
  
 💰 **M-Pesa deposits** — Collect deposits at the time of booking via M-Pesa STK Push. No-shows drop, revenue goes up.
  
-💬 **WhatsApp, SMS confirmations & Email confimations** — Automated booking confirmations and reminders through the channels your guests already use.
+💬 **WhatsApp, SMS confirmations & Email confirmations** — Automated booking confirmations and reminders through the channels your guests already use.
  
 👥 **Guest CRM** — Track every guest by phone number. Visit history, preferences, VIP tags, dietary notes — all in one place.
  
