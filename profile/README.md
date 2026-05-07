@@ -1,11 +1,11 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/getkaramu/.github/main/profile/banner.svg" alt="Karamu — The Hospitality Platform for Africa" width="100%"/>
 </p>
-<p align="center">
+<!-- <p align="center">
   <strong>Karamu</strong> (Swahili for "feast") is a restaurant management and reservations platform built for the African market.
   <br/>
   We help restaurants fill more tables, reduce no-shows, and keep their best guests coming back.
-</p>
+</p> -->
 <p align="center">
   <a href="https://getkaramu.com">Website</a> •
   <a href="https://getkaramu.com/book/demo">Live Demo</a> •
