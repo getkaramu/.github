@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  </style>
+  <defs>
+    <!-- Base gradient -->
+    <linearGradient id="base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5F0"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0F5F2"/>
+    </linearGradient>
+    <!-- Ambient blobs for mesh effect -->
+    <radialGradient id="blob1" cx="10%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#1A4731" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#1A4731" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="85%" cy="20%" r="35%">
+      <stop offset="0%" stop-color="#E8A020" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#E8A020" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob3" cx="60%" cy="90%" r="40%">
+      <stop offset="0%" stop-color="#2E7D4F" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#2E7D4F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob4" cx="30%" cy="80%" r="30%">
+      <stop offset="0%" stop-color="#E8A020" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#E8A020" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob5" cx="95%" cy="70%" r="30%">
+      <stop offset="0%" stop-color="#1A4731" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#1A4731" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Icon gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A4731"/>
+      <stop offset="100%" stop-color="#2E7D4F"/>
+    </linearGradient>
+    <!-- Subtle noise filter for texture -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.03"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- Base gradient background -->
+  <rect width="1200" height="400" fill="url(#base)"/>
+
+  <!-- Gradient mesh blobs -->
+  <rect width="1200" height="400" fill="url(#blob1)"/>
+  <rect width="1200" height="400" fill="url(#blob2)"/>
+  <rect width="1200" height="400" fill="url(#blob3)"/>
+  <rect width="1200" height="400" fill="url(#blob4)"/>
+  <rect width="1200" height="400" fill="url(#blob5)"/>
+
+  <!-- Subtle grain texture overlay -->
+  <rect width="1200" height="400" filter="url(#noise)" opacity="0.4"/>
+
+  <!-- Logo group — exact geometry from karamu-logo-vertical.svg, scaled 2x and centered -->
+  <g transform="translate(600, 200) scale(2) translate(-210, -95)">
+    <!-- Icon container -->
+    <rect x="162.0" y="12" width="96" height="96" rx="22" fill="url(#greenGrad)"/>
+    <!-- Vertical white stroke -->
+    <line x1="200.32319999999999" y1="33.12" x2="200.32319999999999" y2="86.88" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Upper amber diagonal -->
+    <line x1="201.9732" y1="60.0" x2="230.4288" y2="33.12" stroke="#E8A020" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Lower white diagonal -->
+    <line x1="201.9732" y1="60.0" x2="230.4288" y2="86.88" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round"/>
+    <!-- Amber junction dot -->
+    <circle cx="201.9732" cy="60.0" r="4.125" fill="#E8A020"/>
+    <!-- Wordmark -->
+    <text x="210.0" y="148" text-anchor="middle"
+          font-family="'Inter', 'Liberation Sans', Arial, Helvetica, sans-serif" font-size="38" font-weight="600"
+          fill="#1A4731" letter-spacing="8">KARAMU</text>
+    <!-- Tagline -->
+    <text x="210.0" y="178" text-anchor="middle"
+          font-family="'Inter', 'Liberation Sans', Arial, Helvetica, sans-serif" font-size="11" font-weight="400"
+          fill="#888888" letter-spacing="3.5">THE HOSPITALITY PLATFORM FOR AFRICA</text>
+  </g>
+</svg>
