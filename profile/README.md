@@ -11,7 +11,6 @@
   <a href="https://getkaramu.com/book/demo">Live Demo</a> •
   <a href="https://docs.getkaramu.com">Docs</a>
 </p>
----
  
 ### What Karamu does
  
