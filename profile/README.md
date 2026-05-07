@@ -12,27 +12,21 @@
   <a href="https://docs.getkaramu.com">Docs</a>
 </p>
  
-### What Karamu does
+**Karamu** (Swahili for "feast") is a restaurant management and reservations platform built for the African market. We help restaurants fill more tables, reduce no-shows, and keep their best guests coming back — using the tools that actually work in Africa: M-Pesa, WhatsApp, and SMS.
  
-Karamu gives restaurants a complete operating system — from the moment a diner books a table to the moment they leave a tip. Built for how African hospitality actually works: M-Pesa deposits, WhatsApp confirmations, SMS reminders, and guest CRM that treats the phone number as the primary identity.
+### What we offer
  
-**For restaurants:** Online reservations, table management, guest CRM, deposit collection via M-Pesa, real-time dashboard, analytics — all from one platform.
+🗓 **Online reservations** — Branded booking pages where diners reserve a table in seconds, from any device.
  
-**For diners:** Book a table in seconds, pay a deposit from your phone, get WhatsApp/SMS confirmations, and manage your booking without creating an account.
+💰 **M-Pesa deposits** — Collect deposits at the time of booking via M-Pesa STK Push. No-shows drop, revenue goes up.
  
----
+💬 **WhatsApp & SMS confirmations** — Automated booking confirmations and reminders through the channels your guests already use.
  
-**Domain modules** — each maps 1:1 to a future microservice:
+👥 **Guest CRM** — Track every guest by phone number. Visit history, preferences, VIP tags, dietary notes — all in one place.
  
-| Module | Responsibility |
-|--------|---------------|
-| `auth` | JWT auth, roles (owner/manager/staff), multi-tenancy |
-| `restaurant` | Profile, tables, operating hours, booking rules |
-| `reservation` | Availability engine, booking CRUD, waitlist, state machine |
-| `payment` | M-Pesa STK Push, Flutterwave, deposits, refunds |
-| `notification` | SMS (Africa's Talking), WhatsApp (360dialog), email (Resend) |
-| `guest` | CRM — profiles, visit history, tags, notes |
-| `analytics` | Covers, peak hours, no-show rate, revenue |
+📊 **Analytics dashboard** — See your busiest hours, no-show rate, table utilization, and deposit revenue at a glance.
+ 
+🍽 **QR menu & ordering** — Guests scan a QR code at their table to browse the menu, order, and pay — all from their phone. *(coming soon)*
  
 
  
